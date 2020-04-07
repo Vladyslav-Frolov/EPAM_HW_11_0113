@@ -1,0 +1,9 @@
+id = 1 | skillName = Java
+id = 2 | skillName = C++
+id = 3 | skillName = C#
+id = 4 | skillName = Python
+id = 5 | skillName = Scala
+id = 6 | skillName = Ruby
+id = 7 | skillName = Rails
+id = 8 | skillName = Cotlin
+id = 9 | skillName = PHP

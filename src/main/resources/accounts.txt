@@ -1,0 +1,7 @@
+id = 1 | accountName = Vladyslav | status = ACTIVE
+id = 2 | accountName = Alex | status = ACTIVE
+id = 3 | accountName = Eugene | status = ACTIVE
+id = 4 | accountName = Vitaliy | status = DELETED
+id = 5 | accountName = Serge | status = BANNED
+id = 6 | accountName = Test | status = ACTIVE
+id = 7 | accountName = test7 | status = ACTIVE
