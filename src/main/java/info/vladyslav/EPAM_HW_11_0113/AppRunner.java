@@ -16,4 +16,8 @@ public class AppRunner {
         DeveloperView developerView = new DeveloperView();
         developerView.viewDeveloperMenu();
     }
+    // тест гита, удалить после окончания теста
+    {
+        //asdf
+    }
 }
