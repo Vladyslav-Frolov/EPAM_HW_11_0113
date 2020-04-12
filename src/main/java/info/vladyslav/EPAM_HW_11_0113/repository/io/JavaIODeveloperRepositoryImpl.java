@@ -18,7 +18,7 @@ import java.util.Set;
 
 public class JavaIODeveloperRepositoryImpl implements DeveloperRepository {
 
-    private String fileName = ".\\src\\main\\resources\\developers.txt";
+    private String fileName = "./src/main/resources/developers.txt";
     private AccountController accountController = new AccountController();
     private SkillController skillController = new SkillController();
 

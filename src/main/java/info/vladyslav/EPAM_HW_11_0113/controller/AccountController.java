@@ -1,6 +1,7 @@
 package info.vladyslav.EPAM_HW_11_0113.controller;
 
 import info.vladyslav.EPAM_HW_11_0113.model.Account;
+import info.vladyslav.EPAM_HW_11_0113.model.AccountStatus;
 import info.vladyslav.EPAM_HW_11_0113.repository.AccountRepository;
 import info.vladyslav.EPAM_HW_11_0113.repository.io.JavaIOAccountRepositoryImpl;
 
@@ -110,10 +111,6 @@ public class AccountController {
 
         repo.update(idForRecover, account);
         System.out.println(SUCCESSFULLY_RECOVER);
-    }
-
-    public enum AccountStatus {
-        ACTIVE, BANNED, DELETED
     }
 }
 

@@ -12,7 +12,7 @@ import java.util.List;
 
 public class JavaIOSkillRepositoryImpl implements SkillRepository {
 
-    private String fileName = ".\\src\\main\\resources\\skills.txt";
+    private String fileName = "./src/main/resources/skills.txt";
 
     private static final String CAN_NOT_WRITE = "can`t write file ";
 

@@ -1,16 +1,14 @@
 package info.vladyslav.EPAM_HW_11_0113.model;
 
-import info.vladyslav.EPAM_HW_11_0113.controller.AccountController;
-
 public class Account {
     private Long id;
     private String accountName;
-    private AccountController.AccountStatus status;
+    private AccountStatus status;
 
     public Account() {
     }
 
-    public Account(Long id, String accountName, AccountController.AccountStatus status) {
+    public Account(Long id, String accountName, AccountStatus status) {
         this.id = id;
         this.accountName = accountName;
         this.status = status;
@@ -32,11 +30,11 @@ public class Account {
         this.accountName = accountName;
     }
 
-    public AccountController.AccountStatus getStatus() {
+    public AccountStatus getStatus() {
         return status;
     }
 
-    public void setStatus(AccountController.AccountStatus status) {
+    public void setStatus(AccountStatus status) {
         this.status = status;
     }
 

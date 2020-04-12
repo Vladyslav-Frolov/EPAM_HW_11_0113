@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.Set;
 
 public class DeveloperController {
-    private DeveloperRepository repo = (DeveloperRepository) new JavaIODeveloperRepositoryImpl();
+    private DeveloperRepository repo = new JavaIODeveloperRepositoryImpl();
     private AccountController accountController = new AccountController();
     private SkillController skillController = new SkillController();
 

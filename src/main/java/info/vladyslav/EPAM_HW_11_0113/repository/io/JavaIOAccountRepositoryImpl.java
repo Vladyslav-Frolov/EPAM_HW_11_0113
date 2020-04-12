@@ -1,6 +1,6 @@
 package info.vladyslav.EPAM_HW_11_0113.repository.io;
 
-import info.vladyslav.EPAM_HW_11_0113.controller.AccountController;
+import info.vladyslav.EPAM_HW_11_0113.model.AccountStatus;
 import info.vladyslav.EPAM_HW_11_0113.model.Account;
 import info.vladyslav.EPAM_HW_11_0113.repository.AccountRepository;
 
@@ -13,7 +13,7 @@ import java.util.List;
 
 public class JavaIOAccountRepositoryImpl implements AccountRepository {
 
-    private String fileName = ".\\src\\main\\resources\\accounts.txt";
+    private String fileName = "./src/main/resources/accounts.txt";
 
     private static final String CAN_NOT_WRITE = "can`t write file ";
 
@@ -57,7 +57,7 @@ public class JavaIOAccountRepositoryImpl implements AccountRepository {
 
         Long id = null;
         String accountName = null;
-        AccountController.AccountStatus status = null;
+        AccountStatus status = null;
 
         while ((supportForAccountsArrayList = reader.readLine()) != null) {
 
@@ -70,7 +70,7 @@ public class JavaIOAccountRepositoryImpl implements AccountRepository {
                     accountName = token.substring(14);
                 }
                 if (token.startsWith("status = ")) {
-                    status = AccountController.AccountStatus.valueOf(token.substring(9));
+                    status = AccountStatus.valueOf(token.substring(9));
                 }
             }
             accounts.add(new Account(id, accountName, status));
