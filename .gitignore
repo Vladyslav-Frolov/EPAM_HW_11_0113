@@ -1,0 +1,9 @@
+.idea/*
+hw7_ruksov/*
+homeTask7_Staseniuk/*
+*.class
+*.xml
+*.jar
+*.war
+*.ear
+*.iml
