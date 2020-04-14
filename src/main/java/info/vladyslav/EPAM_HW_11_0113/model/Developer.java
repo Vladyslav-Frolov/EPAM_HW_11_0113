@@ -1,5 +1,6 @@
 package info.vladyslav.EPAM_HW_11_0113.model;
 
+import java.util.Objects;
 import java.util.Set;
 
 public class Developer {
@@ -48,5 +49,20 @@ public class Developer {
                 " {" + account +
                 ", skills=" + skills +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Developer developer = (Developer) o;
+        return id == developer.id &&
+                Objects.equals(account, developer.account) &&
+                Objects.equals(skills, developer.skills);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, account, skills);
     }
 }

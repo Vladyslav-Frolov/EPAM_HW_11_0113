@@ -1,5 +1,7 @@
 package info.vladyslav.EPAM_HW_11_0113.model;
 
+import java.util.Objects;
+
 public class Skill {
     private Long id;
     private String skill;
@@ -31,5 +33,19 @@ public class Skill {
     @Override
     public String toString() {
         return skill;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Skill skill1 = (Skill) o;
+        return Objects.equals(id, skill1.id) &&
+                Objects.equals(skill, skill1.skill);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, skill);
     }
 }
