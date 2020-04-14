@@ -103,6 +103,8 @@ public class JavaIOAccountRepositoryImpl implements AccountRepository {
     }
 
     @Override
+    // the method is not used, because the lines are not completely deleted,
+    // and the status "deleted" is assigned for deletion
     public void delete(Account account) {
     }
 

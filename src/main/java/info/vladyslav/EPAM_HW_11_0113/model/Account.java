@@ -1,5 +1,7 @@
 package info.vladyslav.EPAM_HW_11_0113.model;
 
+import java.util.Objects;
+
 public class Account {
     private Long id;
     private String accountName;
@@ -44,4 +46,18 @@ public class Account {
                 ", status=" + status;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Account account = (Account) o;
+        return Objects.equals(id, account.id) &&
+                Objects.equals(accountName, account.accountName) &&
+                status == account.status;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, accountName, status);
+    }
 }
