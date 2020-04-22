@@ -1,12 +1,8 @@
-INSERT INTO `java_io_nio`.`status` (`status_id`, `status`) VALUES ('1', 'ACTIVE');
-INSERT INTO `java_io_nio`.`status` (`status_id`, `status`) VALUES ('2', 'BANNED');
-INSERT INTO `java_io_nio`.`status` (`status_id`, `status`) VALUES ('3', 'DELETED');
-
-INSERT INTO `java_io_nio`.`account` (`account_name`, `id_status`) VALUES ('Vladyslav', '1');
-INSERT INTO `java_io_nio`.`account` (`account_name`, `id_status`) VALUES ('Alex', '1');
-INSERT INTO `java_io_nio`.`account` (`account_name`, `id_status`) VALUES ('Eugene', '1');
-INSERT INTO `java_io_nio`.`account` (`account_name`, `id_status`) VALUES ('Vitaliy', '1');
-INSERT INTO `java_io_nio`.`account` (`account_name`, `id_status`) VALUES ('Serge', '1');
+INSERT INTO `java_io_nio`.`account` (`account_name`, `status`) VALUES ('Vladyslav', 'ACTIVE');
+INSERT INTO `java_io_nio`.`account` (`account_name`, `status`) VALUES ('Alex', 'ACTIVE');
+INSERT INTO `java_io_nio`.`account` (`account_name`, `status`) VALUES ('Eugene', 'ACTIVE');
+INSERT INTO `java_io_nio`.`account` (`account_name`, `status`) VALUES ('Vitaliy', 'BANNED');
+INSERT INTO `java_io_nio`.`account` (`account_name`, `status`) VALUES ('Serge', 'DELETED');
 
 INSERT INTO `java_io_nio`.`skills` (`skill_name`) VALUES ('Java');
 INSERT INTO `java_io_nio`.`skills` (`skill_name`) VALUES ('C++');
